@@ -52,7 +52,7 @@ const RideSelector = () => {
                         }`}
                         onClick={() => {
                             setSelectedRide(car)
-                            setPrice(((basePrice / 10 ** 5) * car.priceMultiplier).toFixed(5))
+                            setPrice(((basePrice / 10 ** 4) * car.priceMultiplier).toFixed(5))
                           }}>
                         <Image
                             src={car.iconUrl}
